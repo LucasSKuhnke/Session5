@@ -8,6 +8,8 @@ age2 = input(f"How old are you {name}? ")
 try:
     age2 = int(age2)
     print(f"{name}, you were born in {2025-age2}")
-except:
+except ValueError:
     print("please enter a valid value for age")
     print("I can also print this in case of error that I prevented")
+except ZeroDivisionError:
+    print("you can not divide by 0!")
